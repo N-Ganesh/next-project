@@ -1,0 +1,16 @@
+@import 'bootstrap/scss/bootstrap.scss';
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Inter:wght@800&display=swap');
+
+body{
+    font-family:  EB Garamond,sans-serif;
+    background-color: #f1f5f8;
+}
+.home-captions{
+    font-family :  Inter ,sans-serif;
+    font-size : 3vw;
+}
+@media (max-width : 576px){
+    .home-captions{
+    font-size: 10vw;}
+}
