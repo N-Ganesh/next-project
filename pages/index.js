@@ -1,10 +1,9 @@
-import Layout from "../components/Layout";
 import { Container, Row, Col } from "react-bootstrap";
 import ImageCarousel from "../components/ImageCarousel";
 import Deck from "../components/CardDeck";
 const Index = () => {
   return (
-    <Layout>
+    <>
       <Container
         className="text-center p-2"
         style={{ backgroundColor: "white" }}
@@ -37,7 +36,7 @@ const Index = () => {
         voluptate Lorem est do do nulla ad. Ipsum id mollit fugiat aliqua.
       </div>
       <Deck />
-    </Layout>
+    </>
   );
 };
 export default Index;
