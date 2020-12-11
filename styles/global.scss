@@ -4,7 +4,7 @@
 
 body{
     font-family:  EB Garamond,sans-serif;
-    background-color: #f1f5f8;
+
 }
 .home-captions{
     font-family :  Inter ,sans-serif;
@@ -13,4 +13,13 @@ body{
 @media (max-width : 576px){
     .home-captions{
     font-size: 10vw;}
+}
+.light-mode{
+    
+        background-color: #f1f5f8;
+
+}
+.dark-mode{
+        background-color: #212529;
+
 }

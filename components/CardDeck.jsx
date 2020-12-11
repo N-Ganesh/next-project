@@ -20,10 +20,13 @@ const Deck = () => {
         </Card.Footer>
       </Card>
       <Card>
-        <Card.Img
-          variant="top"
-          src="https://wallpapercave.com/wp/Ioo4jV9.jpg"
-        />
+        <iframe
+          src="https://www.youtube.com/embed/YE7VzlLtp-4"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+          className="h-75 border-0"
+        ></iframe>
         <Card.Body>
           <Card.Title>Card title</Card.Title>
           <Card.Text>
