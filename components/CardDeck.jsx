@@ -3,7 +3,7 @@ import { Card, CardDeck } from "react-bootstrap";
 const Deck = () => {
   return (
     <CardDeck className="mt-2 p-4 mr-0 ml-0">
-      <Card>
+      <Card className="border-0">
         <Card.Img
           variant="top"
           src="https://wallpapercave.com/wp/Ioo4jV9.jpg"
@@ -19,7 +19,7 @@ const Deck = () => {
           <small className="text-muted">Last updated 3 mins ago</small>
         </Card.Footer>
       </Card>
-      <Card>
+      <Card className="border-0">
         <iframe
           src="https://www.youtube.com/embed/YE7VzlLtp-4"
           frameBorder="0"
@@ -38,7 +38,7 @@ const Deck = () => {
           <small className="text-muted">Last updated 3 mins ago</small>
         </Card.Footer>
       </Card>
-      <Card>
+      <Card className="border-0">
         <Card.Img
           variant="top"
           src="https://wallpapercave.com/wp/Ioo4jV9.jpg"
