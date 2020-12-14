@@ -17,7 +17,7 @@ const Header = () => {
     }
   };
   const changeMode = () => {
-    if (switchMode === 0) {
+    if (!switchMode || switchMode === 0) {
       setSwitchMode(1);
     } else {
       setSwitchMode(0);
@@ -29,8 +29,11 @@ const Header = () => {
   useEffect(() => {}, [switchMode]);
   return (
     <Navbar variant="dark" bg="dark" expand="lg" sticky="top">
-      <Navbar.Brand href="#home">My Personal Project</Navbar.Brand>
-
+      <Link href="/">
+        <Navbar.Brand style={{ cursor: "pointer" }}>
+          My Personal Project
+        </Navbar.Brand>
+      </Link>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="ml-auto ">
@@ -39,8 +42,8 @@ const Header = () => {
             style={{ cursor: "pointer" }}
             onClick={() => changeMode()}
           >
-            {switchMode === 0 ? "Light Mode" : "Dark Mode"}
-            {switchMode === 0 ? lightMode : darkMode}
+            {switchMode === 0 || !switchMode ? "Light Mode" : "Dark Mode"}
+            {switchMode === 0 || !switchMode ? lightMode : darkMode}
             <DisplayModeContext.Provider value={{ switchMode }} />
           </div>
           <Link href="/">
@@ -61,6 +64,16 @@ const Header = () => {
               )}`}
             >
               Projects
+            </span>
+          </Link>
+          <Link href="/about">
+            <span
+              type="button"
+              className={`text-white d-block pt-2 pr-3 ${NavLinkActiveClass(
+                "/about"
+              )}`}
+            >
+              About
             </span>
           </Link>
         </Nav>

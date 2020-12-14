@@ -1,14 +1,7 @@
 import { Container, Row, Col } from "react-bootstrap";
 import ImageCarousel from "../components/ImageCarousel";
 import Deck from "../components/CardDeck";
-import para from "../public/exampleParagraph";
-const duplicatePara = (times) => {
-  let myPara = para;
-  for (let i = 1; i <= times; i++) {
-    myPara += para;
-  }
-  return myPara;
-};
+import duplicatePara from "../utils/utils";
 const Index = () => {
   return (
     <>
@@ -17,7 +10,7 @@ const Index = () => {
         style={{ backgroundColor: "white" }}
       >
         <h1>Hello World</h1>
-        <p>{para}</p>
+        <p>{duplicatePara(1)}</p>
         <ImageCarousel />
         <div className="mt-2 font-weight-bold home-captions">
           <p>Stronger the urge to work hard</p>

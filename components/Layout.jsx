@@ -3,13 +3,15 @@ import NavHeader from "./Header";
 import Footer from "./Footer";
 import DisplayModeContext from "./DisplayModeContext";
 const Layout = ({ children }) => {
-  const [switchMode, setSwitchMode] = useState(0);
+  const [switchMode, setSwitchMode] = useState(null);
   const getMode = () => {
     console.log(switchMode);
     if (switchMode === 1) {
       return "dark-mode";
+    } else if (switchMode === 0) {
+      return "light-mode";
     }
-    return "light-mode";
+    return "default-light-mode";
   };
   return (
     <DisplayModeContext.Provider value={{ switchMode, setSwitchMode }}>

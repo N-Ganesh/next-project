@@ -4,11 +4,6 @@
 
 body{
     font-family:  EB Garamond,sans-serif;
-    transition: .6s ease;
-    -webkit-transition: .6s ease;
-  -moz-transition: .6s ease;
-  -ms-transition: .6s ease;
-  -o-transition: .6s ease;
 
 }
 .home-captions{
@@ -48,4 +43,7 @@ body{
     animation-duration: 0.5s;
     animation-fill-mode: forwards;
     will-change: background-color;
+}
+.default-light-mode{
+    background-color: #f1f5f8;
 }
