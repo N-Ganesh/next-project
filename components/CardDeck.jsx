@@ -1,11 +1,13 @@
 import { Card, CardDeck } from "react-bootstrap";
-
+import Image from "next/image";
 const Deck = () => {
   return (
-    <CardDeck className="mt-2 p-4 mr-0 ml-0">
+    <CardDeck className="mt-2 p-4 mr-0 ml-0 text-dark">
       <Card className="border-0">
-        <Card.Img
-          variant="top"
+        <Image
+          height={1080}
+          width={1920}
+          layout="responsive"
           src="https://wallpapercave.com/wp/Ioo4jV9.jpg"
         />
         <Card.Body>
@@ -39,8 +41,10 @@ const Deck = () => {
         </Card.Footer>
       </Card>
       <Card className="border-0">
-        <Card.Img
-          variant="top"
+        <Image
+          height={1080}
+          width={1920}
+          layout="responsive"
           src="https://wallpapercave.com/wp/Ioo4jV9.jpg"
         />
         <Card.Body>

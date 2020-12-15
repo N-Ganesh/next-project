@@ -17,24 +17,28 @@ body{
 @keyframes fadeOutLight {
     0% {
         background-color: #212529;
+        color : #f1f5f8;
     }
     100% {
         background-color: #f1f5f8;
+        color :  #212529;
     }
 }
 @keyframes fadeOutDark {
     0% {
         background-color: #f1f5f8;
+        color :  #212529;
     }
     100% {
         background-color: #212529;
+        color : #f1f5f8;
     }
 }
 .light-mode{    
     animation-name: fadeOutLight;
     animation-duration: 0.5s;
     animation-fill-mode: forwards;
-    will-change: background-color;
+    will-change: background-color,color;
         
 
 }
@@ -42,7 +46,7 @@ body{
     animation-name: fadeOutDark;
     animation-duration: 0.5s;
     animation-fill-mode: forwards;
-    will-change: background-color;
+    will-change: background-color,color;
 }
 .default-light-mode{
     background-color: #f1f5f8;

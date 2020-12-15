@@ -6,7 +6,7 @@ const Index = () => {
   return (
     <>
       <Container
-        className="text-center p-2"
+        className="text-center p-2 text-dark"
         style={{ backgroundColor: "white" }}
       >
         <h1>Hello World</h1>
