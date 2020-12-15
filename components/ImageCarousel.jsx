@@ -4,14 +4,10 @@ const ImageCarousel = () => {
   return (
     <Carousel className="ml-n2 mr-n2">
       <Carousel.Item>
-        <Image
+        <img
           className="d-block w-100"
-          width={1920}
-          height={1080}
-          layout="responsive"
           src="https://img.wallpapersafari.com/desktop/1920/1080/87/39/Lv3G4r.jpg"
           alt="First slide"
-          loading="lazy"
         />
         <Carousel.Caption>
           <h3>First slide label</h3>
@@ -19,13 +15,10 @@ const ImageCarousel = () => {
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-        <Image
-          className="d-block"
-          width={1920}
-          height={1080}
+        <img
+          className="d-block w-100"
           src="https://img.wallpapersafari.com/desktop/1920/1080/87/39/Lv3G4r.jpg"
           alt="Third slide"
-          loading="lazy"
         />
 
         <Carousel.Caption>
@@ -34,13 +27,10 @@ const ImageCarousel = () => {
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-        <Image
-          className="d-block"
-          width={1920}
-          height={1080}
+        <img
+          className="d-block w-100"
           src="https://img.wallpapersafari.com/desktop/1920/1080/87/39/Lv3G4r.jpg"
           alt="Third slide"
-          loading="lazy"
         />
 
         <Carousel.Caption>
