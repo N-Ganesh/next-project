@@ -1,5 +1,4 @@
 import { Carousel } from "react-bootstrap";
-import Image from "next/image";
 const ImageCarousel = () => {
   return (
     <Carousel className="ml-n2 mr-n2">
